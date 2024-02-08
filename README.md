@@ -14,16 +14,18 @@ The package [gmsh](https://pypi.org/project/gmsh/) must be installed to enable G
  ### `node`
  The first line contains the number of nodes `n_nodes`. The next  `n_nodes` lines contain node information.
 
-     number of nodes
-	 x y z coordinates
-	 ...
+    number of nodes
+	x y z coordinates
+	...
  ### `face`
  The first line contains the number of faces `n_faces`. The next  `n_faces` lines contain face information.
 
     number of faces
 	node_1_idx node_2_idx physical_group_idx owner_cell_idx neighbor_cell_idx
+	...
  ### `cell`
  The first line contains the number of cells `n_cells`. The next  `n_cells` lines contain cell information.
 
     number of cells
 	node_1_idx node_2_idx node_3_idx face_1_idx face_2_idx face_3_idx face_1_assoc_neighbor_cell_idx face_2_assoc_neighbor_cell_idx face_3_assoc_neighbor_cell_idx
+	...
